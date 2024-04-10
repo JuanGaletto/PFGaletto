@@ -1,13 +1,11 @@
-header, footer {
-    background-color: #222;
+/* Encabezado */
+header {
+    background-color: #ff5733; /* Naranja */
     color: #fff;
     padding: 1rem;
 }
 
-body {
-    background-color: #f3f7fa; /* Cambia el color de fondo */
-}
-
+/* Navegación */
 nav {
     background-color: #333;
     padding: 10px;
@@ -28,7 +26,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000; /* Cambiado a negro */
     font-weight: bold;
     padding: 10px;
     border-radius: 5px;
@@ -37,12 +35,24 @@ nav a {
 
 nav a:hover {
     background-color: #555;
+    color: #fff; /* Cambiado a blanco */
 }
 
+nav a.nav-link {
+    color: #000; /* Cambiado a negro */
+}
+
+nav a.nav-link:hover {
+    background-color: #555;
+    color: #fff; /* Cambiado a blanco */
+}
+
+/* Secciones */
 section {
     padding: 20px;
 }
 
+/* Ofertas */
 .oferta-container {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +62,7 @@ section {
 
 .oferta {
     width: 300px;
-    background-color: #fff;
+    background-color: #f8d7da; /* Rojo claro */
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -75,10 +85,8 @@ section {
     padding: 15px;
 }
 
+/* Pie de página */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     background-color: #222;
     color: #fff;
     text-align: center;
