@@ -1,61 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../style.scss"> <!-- Cambiado el enlace al archivo SCSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Ropa Deportiva</title>
 </head>
+
 <body>
-    <header class="bg-success text-white p-3"> <!-- Cambiado a bg-success -->
-        <div class="container">
-            <h1 class="text-center">¡Descubre la Ropa Deportiva!</h1> <!-- Cambiado el texto -->
-            <p class="lead text-center">Estilo y comodidad para tus entrenamientos</p> <!-- Añadido un subtítulo -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Tienda de Ropa</a>
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="ropa_deportiva.html">Ropa Deportiva</a></li>
+                    <li><a href="ropa_mujer.html">Ropa de Mujer</a></li>
+                    <li><a href="ropa_hombre.html">Ropa de Hombre</a></li>
+                    <li><a href="ropa_ninos.html">Ropa para Niños</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="cart-icon">&#128722;</a>
+                <form action="#" method="GET" class="search-form">
+                    <input type="text" placeholder="Buscar..." name="query">
+                    <button type="submit">&#128269;</button>
+                </form>
+            </div>
         </div>
     </header>
-    <nav class="bg-secondary">
-        <div class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li> <!-- Corregido el enlace -->
-                <li class="nav-item"><a class="nav-link" href="ropa_hombre.html">Ropa de Hombre</a></li>
-                <li class="nav-item"><a class="nav-link" href="ropa_mujer.html">Ropa de Mujer</a></li>
-                <li class="nav-item"><a class="nav-link" href="ropa_ninos.html">Ropa de Niños</a></li>
-            </ul>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Ropa Deportiva para Hombres y Mujeres</h2>
+                <p>¡Mantente activo y con estilo con nuestra colección de ropa deportiva!</p>
+
+                <h2>Ofertas Especiales</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="oferta">
+                            <img src="../IMAGENES/deportivaremera.jfif" alt="Oferta 1" class="img-fluid">
+                            <p>¡Descuento del 40% en la segunda unidad!</p>
+                            <p>¡Renueva tu guardarropa deportivo ahora!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="oferta">
+                            <img src="../IMAGENES/conjuntodeportivo.jfif" alt="Oferta 2" class="img-fluid">
+                            <p>¡Compra 1 conjunto a 20% más barato que comprándolos por separado!</p>
+                            <p>¡Eleva tu rendimiento con nuestro estilo!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="oferta">
+                            <img src="../IMAGENES/zapatillasdeportivas.jfif" alt="Oferta 3" class="img-fluid">
+                            <p>¡Envíos a todo el país!</p>
+                            <p>¡Compra ahora y recibe en casa!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Acerca de Nosotros</h3>
+                <p>Somos una tienda de ropa dedicada a ofrecer moda de calidad para todos los estilos.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Dirección: Calle Principal 123, Ciudad</li>
+                    <li>Teléfono: +34 123 456 789</li>
+                    <li>Email: contacto@tiendaropa.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/tuPerfil" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/tuPerfil" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com/tuPerfil" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <section class="container py-4">
-        <h2 class="text-center">Ropa Deportiva para Hombres y Mujeres</h2>
-        <p class="text-center">¡Mantente activo y con estilo con nuestra colección de ropa deportiva!</p>
-    </section>
-    <section class="container py-4">
-        <h2 class="text-center">Ofertas Especiales</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="oferta">
-                    <img src="../IMAGENES/deportivaremera.jfif" alt="Oferta 1" class="img-fluid">
-                    <p class="text-center">¡Descuento del 40% en la segunda unidad!</p> <!-- Cambiado el texto -->
-                    <p class="text-center">¡Renueva tu guardarropa deportivo ahora!</p> <!-- Nuevo texto agregado -->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="oferta">
-                    <img src="../IMAGENES/conjuntodeportivo.jfif" alt="Oferta 2" class="img-fluid">
-                    <p class="text-center">¡Compra 1 conjunto a 20% más barato que comprándolos por separado!</p> <!-- Cambiado el texto -->
-                    <p class="text-center">¡Eleva tu rendimiento con nuestro estilo!</p> <!-- Nuevo texto agregado -->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="oferta">
-                    <img src="../IMAGENES/zapatillasdeportivas.jfif" alt="Oferta 3" class="img-fluid">
-                    <p class="text-center">¡Envíos a todo el país!</p> <!-- Cambiado el texto -->
-                    <p class="text-center">¡Compra ahora y recibe en casa!</p> <!-- Nuevo texto agregado -->
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
         </div>
-    </section>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>2024 Tienda de Ropa</p>
     </footer>
 </body>
+
 </html>

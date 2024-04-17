@@ -2,57 +2,111 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Tienda de Ropa</title>
 </head>
 <body>
-    <header class="bg-danger text-white p-3"> <!-- Cambiado a bg-danger -->
-        <div class="container">
-            <h1 class="text-center">¡Bienvenido a la Tienda de Ropa!</h1> <!-- Cambiado el texto y añadido signo de exclamación -->
-            <p class="lead text-center">Encuentra la mejor moda para ti</p> <!-- Añadido un subtítulo -->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="#" class="logo">Tienda de Ropa</a>
+            <!-- Menú de navegación -->
+            <nav>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./pages/ropa_deportiva.html">Ropa Deportiva</a></li>
+                    <li><a href="./pages/ropa_mujer.html">Ropa de Mujer</a></li>
+                    <li><a href="./pages/ropa_hombre.html">Ropa de Hombre</a></li>
+                    <li><a href="./pages/ropa_ninos.html">Ropa para Niños</a></li>
+                </ul>
+            </nav>
+            <!-- Opcional: enlaces adicionales (por ejemplo, carrito de compras, barra de búsqueda) -->
+            <div class="header-actions">
+                <a href="#" class="cart-icon">&#128722;</a> <!-- Carrito de compras -->
+                <!-- Barra de búsqueda -->
+                <form action="#" method="GET" class="search-form">
+                    <input type="text" placeholder="Buscar..." name="query">
+                    <button type="submit">&#128269;</button>
+                </form>
+            </div>
         </div>
     </header>
-    <nav class="bg-secondary">
-        <div class="container">
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/ropa_hombre.html">Ropa de Hombre</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/ropa_mujer.html">Ropa de Mujer</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/ropa_deportiva.html">Ropa Deportiva</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/ropa_ninos.html">Ropa de Niños</a></li>
-            </ul>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Bienvenidos a Nuestra Tienda de Ropa</h2>
+                <p class="section__text">Descubre las últimas tendencias en moda para todos.</p>
+            </div>
+        </section>
+
+        <section class="section-ofertas">
+            <div class="container">
+                <h2 class="section-ofertas__title">Ofertas Especiales</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="oferta">
+                            <img src="./imagenes/images.jfif" alt="Oferta 1" class="oferta__img">
+                            <p class="oferta__desc">¡Descuento del 40% en la segunda unidad!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="oferta">
+                            <img src="./IMAGENES/b844281f182289bc47b69530190167a9.jpg" alt="Oferta 2" class="oferta__img">
+                            <p class="oferta__desc">¡Promoción de 30% en ropa deportiva!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <div class="oferta">
+                            <img src="imagenes/descarga.jfif" alt="Oferta 3" class="oferta__img">
+                            <p class="oferta__desc">¡Hasta 50% de descuento en ropa de verano!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Acerca de Nosotros</h3>
+                <p>Somos una tienda de ropa dedicada a ofrecer moda de calidad para todos los estilos.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Dirección: Calle Principal 123, Ciudad</li>
+                    <li>Teléfono: +34 123 456 789</li>
+                    <li>Email: contacto@tiendaropa.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Síguenos</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/tuPerfil" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/tuPerfil" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com/tuPerfil" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <section class="container py-4">
-        <h2 class="text-center">Ofertas Especiales</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="oferta">
-                    <img src="./IMAGENES/images.jfif" alt="Oferta 1" class="img-fluid">
-                    <p class="text-center">¡Descuento del 20% en Buzos para Hombres!</p> <!-- Cambiado el texto -->
-                    <p class="text-center">¡No te pierdas esta oferta exclusiva!</p> <!-- Nuevo texto agregado -->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="oferta">
-                    <img src="./IMAGENES/b844281f182289bc47b69530190167a9.jpg" alt="Oferta 2" class="img-fluid">
-                    <p class="text-center">¡Compra 2 Pantalones y lleva el tercero con 50% de descuento!</p> <!-- Cambiado el texto -->
-                    <p class="text-center">¡Renueva tu estilo hoy mismo!</p> <!-- Nuevo texto agregado -->
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="oferta">
-                    <img src="./IMAGENES/descarga.jfif" alt="Oferta 3" class="img-fluid">
-                    <p class="text-center">¡Envío gratuito en Ropa Deportiva para Niños!</p> <!-- Cambiado el texto -->
-                    <p class="text-center">¡Equípalos para sus aventuras!</p> <!-- Nuevo texto agregado -->
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
         </div>
-    </section>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>2024 Tienda de Ropa</p>
     </footer>
+
 </body>
 </html>
